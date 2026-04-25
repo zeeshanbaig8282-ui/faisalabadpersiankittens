@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Faisalabad Persian Kittens</title>
+  <meta name="description" content="Get in touch with Faisalabad Persian Kittens to inquire about available kittens and adoption." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">
+      <span class="nav__logo-icon">✦</span>
+      Faisalabad Persian Kittens
+    </a>
+    <button class="nav__toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav__links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="hero__eyebrow">Get in Touch</p>
+      <h1 class="page-hero__title">Begin your <em>Persian journey</em><br>today</h1>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form reveal">
+        <h2>Send Us a Message</h2>
+        <p class="contact-form__sub">Fill in the form below and we'll respond within 24 hours.</p>
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Ahmed Khan" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp (optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="+92 300 000 0000" />
+          </div>
+          <div class="form-group">
+            <label for="interest">I'm interested in…</label>
+            <select id="interest" name="interest">
+              <option value="">Select an option</option>
+              <option>Traditional (Doll Faced) Persian Kitten</option>
+              <option>Persian Punched Face Kitten</option>
+              <option>Persian Peke Face Kitten</option>
+              <option>General inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your home, family, and what you're looking for…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Inquiry</button>
+          <div id="formSuccess" class="form-success" style="display:none;">
+            ✦ Thank you! We'll be in touch shortly.
+          </div>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="contact-info reveal">
+        <h2>Contact Details</h2>
+        <div class="contact-info__items">
+          <div class="contact-info__item">
+            <div class="contact-info__icon">📍</div>
+            <div>
+              <strong>Location</strong>
+              <p>Faisalabad, Punjab, Pakistan</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">📞</div>
+            <div>
+              <strong>Phone / WhatsApp</strong>
+              <p><a href="tel:+923481265995">+92 3481265995</a></p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:zeeshanbaig8282@gmail.com">zeeshanbaig8282@gmail.com</a></p>
+            </div>
+          </div>
+      
+            <div>
+              
+          
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info__note">
+          <p><strong>Please note:</strong> We strongly encourage all potential families to visit in person before adopting.In case, if you are reachable then we also provide safe and secure cargo service all over the Pakistan .</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__logo">✦ Faisalabad Persian Kittens</p>
+      <nav class="footer__nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer__copy">© 2025 Faisalabad Persian Kittens. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
