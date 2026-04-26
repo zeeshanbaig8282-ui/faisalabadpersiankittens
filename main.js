@@ -20,11 +20,9 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 // Contact form
 const form = document.getElementById('contactForm');
 if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
+  form.addEventListener('submit', () => {
     const success = document.getElementById('formSuccess');
     success.style.display = 'block';
-    form.reset();
     setTimeout(() => success.style.display = 'none', 5000);
   });
 }
